@@ -27,20 +27,19 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // --- CAMERA ROTATION ---
+        // ---- CAMERA ROTATION ----
         turn.x += Input.GetAxis("Mouse X") * lookspeed;
-        turn.y += Input.GetAxis("Mouse Y") * lookspeed;
+        turn.y -= Input.GetAxis("Mouse Y") * lookspeed;  
         turn.y = Mathf.Clamp(turn.y, -80f, 80f);
 
-        transform.localRotation = Quaternion.Euler(0, turn.x, 0);
-        playerCamera.transform.localRotation = Quaternion.Euler(-turn.y, 0, 0);
+        transform.rotation = Quaternion.Euler(0, turn.x, 0);
+        playerCamera.transform.localRotation = Quaternion.Euler(turn.y, 0, 0);
 
-        // --- MOVEMENT ---
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 forward = playerCamera.transform.forward;
-        Vector3 right = playerCamera.transform.right;
+        Vector3 forward = transform.forward;
+        Vector3 right = transform.right;
 
         forward.y = 0;
         right.y = 0;
@@ -49,14 +48,10 @@ public class PlayerMovement : MonoBehaviour
 
         float currentSpeed = Input.GetKey(KeyCode.Q) ? runspeed : movementspeed;
 
-        Charcon.Move(move * currentSpeed * Time.deltaTime);
-
-        
         if (Charcon.isGrounded)
         {
             if (yVelocity < 0)
-                yVelocity = -2f;
-                Debug.Log(Charcon.isGrounded); 
+                yVelocity = -2f; 
 
             if (Input.GetKeyDown(KeyCode.Space))
                 yVelocity = jumpforce;
@@ -64,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
         yVelocity += gravity * Time.deltaTime;
 
-        Charcon.Move(new Vector3(0, yVelocity, 0) * Time.deltaTime);
+        Vector3 finalMove = (move * currentSpeed) + new Vector3(0, yVelocity, 0);
+        Charcon.Move(finalMove * Time.deltaTime);
     }
 }
