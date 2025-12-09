@@ -4,6 +4,8 @@ public class ShadowFigureHallucination : MonoBehaviour, IHallucination
 {
     public GameObject shadowPrefab;
     public Camera playerCam;
+    public AudioClip audioClip;
+    public AudioSource audioSource;
 
     public void Trigger(float intensity)
     {
@@ -12,6 +14,9 @@ public class ShadowFigureHallucination : MonoBehaviour, IHallucination
 
         GameObject obj = Instantiate(shadowPrefab, pos, Quaternion.identity);
 
+        audioSource.PlayOneShot(audioClip);
+        
         Destroy(obj, Random.Range(0.2f, 1f));
+
     }
 }
