@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "horror_game1.sln"
+    "dotnet.defaultSolution": "Unity_practice.sln"
 }
