@@ -22,23 +22,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b16664a5a1317064a842c9d4f2e2b755, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b16664a5a1317064a842c9d4f2e2b755, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b16664a5a1317064a842c9d4f2e2b755, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b16664a5a1317064a842c9d4f2e2b755, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b16664a5a1317064a842c9d4f2e2b755, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b16664a5a1317064a842c9d4f2e2b755, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b16664a5a1317064a842c9d4f2e2b755, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1a388e56a80668642a6a58f419f02a90, type: 2}
+      objectReference: {fileID: 2100000, guid: 7c6a45005f6428b4fa7ab14d785ea516, type: 2}
     - target: {fileID: 919132149155446097, guid: b16664a5a1317064a842c9d4f2e2b755, type: 3}
       propertyPath: m_Name
       value: creepy+ghost+girl+3d+model
