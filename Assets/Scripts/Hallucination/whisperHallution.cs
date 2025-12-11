@@ -36,6 +36,7 @@ public class WhisperHallucination : MonoBehaviour, IHallucination
     
         audioSource.clip = clip;
         audioSource.spatialBlend = 1f;
+        Debug.Log("Whisper Hallucination");
         audioSource.Play();
     }
 }

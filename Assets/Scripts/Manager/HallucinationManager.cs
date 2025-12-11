@@ -7,6 +7,7 @@ public class HallucinationManager : MonoBehaviour
     public float maxTime = 15f;
 
     private float nextTime;
+    public Material HallucinationEffectMat;
 
     private IHallucination[] hallucinations;
 
