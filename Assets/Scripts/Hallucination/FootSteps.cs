@@ -39,5 +39,6 @@ public class FootstepHallucination : MonoBehaviour, IHallucination
         audioSource.clip = clip;
         audioSource.spatialBlend = 1f; 
         audioSource.Play();
+        Debug.Log("Footsteps Hallucination");
     }
 }
