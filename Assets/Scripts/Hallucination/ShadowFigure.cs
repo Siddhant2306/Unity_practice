@@ -15,7 +15,7 @@ public class ShadowFigureHallucination : MonoBehaviour, IHallucination
         GameObject obj = Instantiate(shadowPrefab, pos, Quaternion.identity);
 
         audioSource.PlayOneShot(audioClip);
-        
+        Debug.Log("Shadow Hallucination");
         Destroy(obj, Random.Range(0.2f, 1f));
 
     }
