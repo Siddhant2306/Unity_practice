@@ -868,8 +868,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intensity: 0
-  minTime: 5
-  maxTime: 15
+  minTime: 10
+  maxTime: 50
   HallucinationEffectMat: {fileID: 0}
 --- !u!114 &381385217
 MonoBehaviour:
@@ -994,6 +994,54 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &509155223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509155224}
+  - component: {fileID: 509155225}
+  m_Layer: 0
+  m_Name: AnomalyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &509155224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509155223}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1478744925}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &509155225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509155223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa992c570f8e054c9b2ae740604069e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minInterval: 5
+  maxInterval: 12
+  anomalyIntensity: 2
+  anomalyDuration: 30
 --- !u!20 &604656474 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2155690939982641301, guid: 136760c60466a444b8d78155ba4f929c, type: 3}
@@ -1843,6 +1891,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.32
       objectReference: {fileID: 0}
+    - target: {fileID: 1111614945174344757, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536279013771216024, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
     - target: {fileID: 1796089912247590755, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.82
@@ -1855,9 +1911,25 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2300644476882049156, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590807135786757097, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
     - target: {fileID: 2901186233384909486, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_Intensity
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970622401740467792, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977167577828681976, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
       objectReference: {fileID: 0}
     - target: {fileID: 3237314244590631649, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_Intensity
@@ -1883,6 +1955,14 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 3682923099082166664, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809936265559623305, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
     - target: {fileID: 4105518990394165322, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_Intensity
       value: 60
@@ -1891,9 +1971,41 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4223945931563625111, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499634572088619541, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632537870281123846, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
     - target: {fileID: 4815966553912639441, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_Intensity
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978920458170647972, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691912851535237040, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778795105551768836, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449769354904705836, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586682983042356088, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
       objectReference: {fileID: 0}
     - target: {fileID: 6617753655975376410, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_Intensity
@@ -1907,9 +2019,21 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 7629866278623929023, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205934697904277727, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
     - target: {fileID: 8268722513665047651, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_Name
       value: OBSERVER'SWAREHOUSEanomalyRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315959396272216384, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
       objectReference: {fileID: 0}
     - target: {fileID: 8337474947698736118, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1951,9 +2075,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8415844330673188788, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453233782077157898, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
+      objectReference: {fileID: 0}
     - target: {fileID: 8530670989694074516, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_Intensity
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883452663650085267, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      propertyPath: m_TagString
+      value: AnomalyObjects
       objectReference: {fileID: 0}
     - target: {fileID: 8941449206357050767, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       propertyPath: m_Intensity
@@ -1980,6 +2116,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8337474947698736118, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1280113226}
+    - targetCorrespondingSourceObject: {fileID: 8337474947698736118, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 509155224}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3272387557531930617, guid: 1201828f3b4a2644f8072d2d0ab362d6, type: 3}
       insertIndex: -1
