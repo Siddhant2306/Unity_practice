@@ -29,8 +29,5 @@ A Unity project built as an **anomaly-style horror game**: you explore scenes an
 - Unity-generated folders like `Library/` can be large; they’re typically not committed in clean Unity repos. If you’re cloning fresh, Unity will regenerate them.
 - If you see missing materials/textures on first open, let Unity finish importing assets; then re-open the target scene.
 
-## TODO (nice-to-have)
-
-- Add a short “How to play” section (controls + objective) once controls are finalized.
-- Add screenshots / GIF of the anomaly examples.
-- Add a build section (platforms tested, target resolution, etc.).
+## Gameplay video
+https://youtu.be/XOtqM0cjBR0?si=WWiqcFXF8K48fkAs
